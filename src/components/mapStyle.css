@@ -1,0 +1,12 @@
+/* .map-img{
+    width: "500px";
+    height: 100%;
+    align-self: center;
+} */
+@media screen and (max-width: 600px){
+    .map-img{
+        width: 350px;
+        height: 100%;
+        align-self: center;
+    }
+}

@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./mapStyle.css"
 function Map() {
   return (
-    <div className="text-center p-2" >
-      <img src="images/map.jpg" class="rounded" alt="Responsive image"/>
-    </div>
+ 
+      <img src="images/map.jpg"  className="map-img" alt="Responsive image"/>
+  
   );
 }
 
