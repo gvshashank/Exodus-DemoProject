@@ -61,9 +61,9 @@ function App() {
         </div>
       </div>
 
-      <div className="py-5">
+      {/* <div className="py-5">
         <Map />
-      </div>
+      </div> */}
       <hr class="hr" />
       <div className="p-5">
         <Scroll />

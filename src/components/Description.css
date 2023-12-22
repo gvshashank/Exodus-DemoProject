@@ -1,3 +1,9 @@
 .ext-info{
   /* font-weight: bolder; */
 }
+.showMore-btn{
+  background-color: none;
+  border: none;
+  color:darkblue;
+  text-decoration: underline;
+}

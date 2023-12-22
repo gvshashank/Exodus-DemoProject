@@ -1,0 +1,8 @@
+.scrolling-cont {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  .card-col {
+    display: inline-block;
+  }
+}

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Description.css";
-
+import { IoIosArrowRoundDown, IoIosArrowRoundUp } from "react-icons/io";
 function Description() {
   const [showMore, setShowMore] = useState(false);
   // dataType[variable,function]=ReactHook(dafaultValue)
   const paragraph = (
-    <p style={{fontSize:"18px"}}>
+    <p style={{ fontSize: "18px" }}>
       There are many pagan sites to visit as well as UNESCO World
       Heritage-listed churches, which are – almost without exception – built in
       stunning locations. Surrounded by forests, perched on the top of dramatic
@@ -22,8 +22,8 @@ function Description() {
   return (
     <div>
       <p>Home/Europe/Aremenia</p>
-      <h1 style={{fontFamily:"sans-serif"}}>Armenia Tours</h1>
-      <p style={{fontSize:"18px"}}>
+      <h1 style={{ fontFamily: "sans-serif" }}>Armenia Tours</h1>
+      <p style={{ fontSize: "18px" }}>
         Armenia is a mountainous nation in West Asia, a former Soviet Republic,
         and was one of the first Christian nations, embracing Christianity in
         the fourth century. This rich cultural and natural environment makes it
@@ -32,9 +32,9 @@ function Description() {
       </p>
       <p className="ext-info"> {showMore ? paragraph : <></>}</p>
       {/* condition ? TrueFucnton : FalseFunction */}
-      <button onClick={() => setShowMore(!showMore)}>
-        
+      <button onClick={() => setShowMore(!showMore)} className="showMore-btn">
         {showMore ? "Show Less" : "Show More"}
+        {showMore ? <IoIosArrowRoundUp /> : <IoIosArrowRoundDown />}
       </button>
       {/* <p className="ext-info">{showMore ? para : `${para.substring(0, 2000)}`}</p> */}
       {/* ShowMore function triggers the UseState and it ngates the Showmore variable in useState hook, depending upon the value of the variable the text and the paragraph are displayed accordingly */}
