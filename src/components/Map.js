@@ -1,11 +1,7 @@
 import React from "react";
-import "./mapStyle.css"
+import "./mapStyle.css";
 function Map() {
-  return (
- 
-      <img src="images/map.jpg"  className="map-img" alt="Responsive image"/>
-  
-  );
+  return <img src="map.jpg" className="map-img" alt="Responsive image" />;
 }
 
 export default Map;
